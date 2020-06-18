@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/main_toolbar"
+            android:background="?attr/colorPrimary">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_home_24"
+                android:background="?attr/colorPrimary"
+                android:contentDescription="@string/home_button"
+                />
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_settings_24"
+                android:background="?attr/colorPrimary"
+                android:layout_marginStart="290dp"
+                android:contentDescription="@string/settings_page"
+                android:id="@+id/fab"/>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/betweengrey"
+            app:tabTextColor="@color/colorPrimaryDark"
+            app:tabSelectedTextColor="@color/yellow"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

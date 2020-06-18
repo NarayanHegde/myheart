@@ -1,0 +1,57 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/personal_header"
+        app:key="personal_category"
+        app:initialExpandedChildrenCount="3">
+
+        <EditTextPreference
+            app:key="name"
+            app:title="@string/name_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="age"
+            app:title="@string/age_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:entries="@array/gender"
+            app:entryValues="@array/reply_values"
+            app:key="Gender"
+            app:title="@string/gender_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="height"
+            app:title="@string/height_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="weight"
+            app:title="@string/weight_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/manage_header">
+
+        <SwitchPreferenceCompat
+            app:key="donate"
+            app:summaryOff="@string/donate_summary_off"
+            app:summaryOn="@string/donate_summary_on"
+            app:title="@string/donate_title" />
+
+        <Preference
+            app:key="delete"
+            app:title="@string/delete_title"
+            app:summary="@string/delete_summary"
+            />
+
+    </PreferenceCategory>
+
+    <Preference
+        app:key="logout"
+        app:title="@string/logout"
+        />
+
+</PreferenceScreen>

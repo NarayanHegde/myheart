@@ -1,0 +1,13 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+</resources>

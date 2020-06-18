@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.todo.Todo"
+    android:orientation="vertical"
+    android:background="@color/lessgrey">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/yellow"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/upload_picture_text"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/upload"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview2"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/checked"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="10dp"
+        android:clickable="false"
+        android:focusable="false">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/completed_task"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/completed_task"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/ic_baseline_check_circle_24"
+                android:drawablePadding="5dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

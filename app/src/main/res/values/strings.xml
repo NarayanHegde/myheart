@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Start</string>
+    <string name="app_name2">myHeart</string>
+    <string name="app_summary">This is the app summary. For Example
+    This app aims to help you prevent any CVD diseases and warn you about the specific risks
+        also providing interventions to resolve them.</string>
+
+
+    <string name="web_client_id">531947274210-b95o5bpv62kaguphto0fl7c3d05fp3e8.apps.googleusercontent.com</string>
+
+
+    <string name="sign_in_text">Sign In Using Google</string>
+
+    <string name="home_button">Home Page</string>
+    <string name="settings_page">Settings Page</string>
+
+    <string name="tab_text_1">MyTask</string>
+    <string name="tab_text_2">MyHeart</string>
+    <string name="tab_text_3">Challenges</string>
+    <string name="tab_text_4">Knowledge</string>
+
+    <string name="random_number">Random Number</string>
+
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="upload">Upload a Picture</string>
+    <string name="completed_task">Completed Task</string>
+
+    <string name="challenge">Challenge 1</string>
+    <string name="completed_challenge">Completed Challenge</string>
+
+    <string name="source1">Source 1</string>
+    <string name="source2">Source 2</string>
+
+
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="delete_supporting_text">This will delete all your data.</string>
+
+
+    <!-- Preference Titles -->
+    <string name="personal_header">Personal Information</string>
+    <string name="manage_header">Manage Your Data</string>
+
+    <!-- Personal Preferences -->
+    <string name="name_title">Name</string>
+    <string name="gender_title">Gender</string>
+    <string name="age_title">Age</string>
+    <string name="height_title">Height</string>
+    <string name="weight_title">Weight</string>
+
+    <!-- Data Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="delete_title">Delete Data</string>
+    <string name="donate_title">Donate Data</string>
+    <string name="delete_summary">Delete all your data.</string>
+    <string name="donate_summary_on">Data will be donated on the 30th of each month</string>
+    <string name="donate_summary_off">No data will be donated for Study</string>
+
+    <!--Logout-->
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
