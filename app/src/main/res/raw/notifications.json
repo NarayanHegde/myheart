@@ -1,0 +1,61 @@
+{
+  "notifications": [
+    {
+      "title": "Selfie",
+      "content": "Upload a Selfie",
+      "type": "Vitals",
+      "entrytype": "Action",
+      "frequency": "Weekly",
+      "hour": "10",
+      "minutes": "0"
+    },
+    {
+      "title":"Diet",
+      "content":"Limit the salt intake to 5g",
+      "hour":"10",
+      "minutes":"0",
+      "frequency":"Daily",
+      "type":"Tasks",
+      "entrytype":"Boolean"
+    },
+    {
+      "title":"Diet",
+      "content":"5 serving of raw uncooked fruits and vegetables",
+      "hour":"13",
+      "minutes":"0",
+      "frequency":"Daily",
+      "type":"Tasks",
+      "entrytype":"Boolean"
+    }
+  ,
+    {
+      "title":"Physical Activity",
+      "content":"Intense Activity for 30 min in the day",
+      "hour":"9",
+      "minutes":"0",
+      "frequency":"Daily",
+      "type":"Tasks",
+      "entrytype":"Boolean"
+    }
+  ,
+    {
+      "title":"Meditation",
+      "content":"Meditate for 10 minutes",
+      "hour":"7",
+      "minutes":"0",
+      "frequency":"Daily",
+      "type":"Tasks",
+      "entrytype":"Boolean"
+    }
+  ,
+    {
+      "title":"Sleep",
+      "content":"It's time to sleep",
+      "hour":"23",
+      "minutes":"15",
+      "frequency":"Daily",
+      "type":"Tasks",
+      "entrytype":"Boolean"
+    }
+  ]
+}

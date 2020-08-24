@@ -47,6 +47,13 @@
             app:summary="@string/delete_summary"
             />
 
+<!--        <EditTextPreference-->
+<!--            app:key="show_data"-->
+<!--            app:title="@string/data_title"-->
+<!--            app:useSimpleSummaryProvider="true"-->
+<!--            app:selectable="false"-->
+<!--            />-->
+
     </PreferenceCategory>
 
     <Preference

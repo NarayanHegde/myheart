@@ -10,9 +10,11 @@ import java.util.*
 @Dao
 interface InputDao {
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertdata (dataInput: DataInput)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertdata (dataInput: DataInput):Long
 
+    @Query("Select * from data_input")
+    fun getAllEntries(): LiveData<List<DataInput>>
 
     @Query("SELECT data from data_input where datapath= :datatype order by timestamp DESC")
     fun getAllFromSingleType( datatype: Converters.Datapath): LiveData<List<FileData>>

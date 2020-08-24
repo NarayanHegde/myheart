@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lessgrey"
+    tools:context=".ui.onboarding.Onboarding_socioeconomic">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/CustomInputLayout"
+        android:id="@+id/supporttext"
+        android:layout_marginTop="30dp"
+        android:hint="@string/supportperson">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:id="@+id/supporttextanswer"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/CustomInputLayout"
+        android:id="@+id/sleeptext"
+        android:layout_marginTop="100dp"
+        android:hint="@string/sleeptext">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:id="@+id/sleeptextanswer"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/CustomInputLayout"
+        android:id="@+id/stresstext"
+        android:layout_marginTop="170dp"
+        android:hint="@string/stress">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:id="@+id/stresstextanswer"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/smoke"
+        android:textColor="@color/betweengrey"
+        android:background="@color/yellow"
+        android:layout_marginTop="240dp"
+        android:padding="15dp"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:id="@+id/smokeanswer"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="295dp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppButton3"
+            android:text="@string/yes"
+            android:id="@+id/yessmoke"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppButton3"
+            android:text="@string/no"
+            android:id="@+id/nosmoke"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/history"
+        android:textColor="@color/betweengrey"
+        android:background="@color/yellow"
+        android:layout_marginTop="345dp"
+        android:padding="15dp"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/historyanswer"
+        app:singleSelection="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="400dp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppButton3"
+            android:text="@string/yes"
+            android:id="@+id/yeshistory"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppButton3"
+            android:text="@string/no"
+            android:id="@+id/nohistory"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/medication"
+        android:textColor="@color/betweengrey"
+        android:background="@color/yellow"
+        android:layout_marginTop="450dp"
+        android:padding="15dp"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicationanswer"
+        app:singleSelection="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="505dp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppButton3"
+            android:text="@string/yes"
+            android:id="@+id/yesmedication"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppButton3"
+            android:text="@string/no"
+            android:id="@+id/nomedication"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+    <Button
+        android:id="@+id/finishbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:layout_gravity="center|bottom"
+
+
+        android:layout_marginBottom="60dp"
+        style="@style/AppButton2"
+        android:backgroundTint="@color/blue"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="35dp"
+        android:text="@string/smartness_meter"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        />
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="50"
+        android:layout_gravity="bottom"
+        android:scaleY="1.5"
+        android:layout_marginBottom="10dp"
+        android:progressDrawable="@drawable/progress_background"
+        />
+
+
+</FrameLayout>

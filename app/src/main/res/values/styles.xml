@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/grey</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/betweengrey</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +16,45 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppButton2" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:backgroundTint">@color/yellow</item>
+        <item name="android:textColor">@color/betweengrey</item>
+
+    </style>
+    <style name="AppButton4" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColor">@color/betweengrey</item>
+
+    </style>
+    <style name="AppButton3" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:backgroundTint">@color/yellow</item>
+        <item name="android:textColor">@color/betweengrey</item>
+
+    </style>
+
+    <style name="AppButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:backgroundTint">@color/yellow</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="CustomInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="boxBackgroundColor">@color/yellow</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+    <style name="CustomTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">5sp</item>
+    </style>
+
+
 
 </resources>

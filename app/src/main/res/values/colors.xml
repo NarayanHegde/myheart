@@ -9,6 +9,8 @@
     <color name="betweengrey">#383938</color>
     <color name="lessgrey">#494A49</color>
     <color name="yellow">#FFC107</color>
+    <color name="blue">#52ACB7</color>
+    <color name="black">#000000</color>
 
 
 </resources>

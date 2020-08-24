@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Start</string>
+    <string name="app_name">CVDapp</string>
     <string name="app_name2">myHeart</string>
     <string name="app_summary">This is the app summary. For Example
     This app aims to help you prevent any CVD diseases and warn you about the specific risks
         also providing interventions to resolve them.</string>
 
 
-    <string name="web_client_id">531947274210-b95o5bpv62kaguphto0fl7c3d05fp3e8.apps.googleusercontent.com</string>
+    <string name="web_client_id">70051397625-d72l2dodvfsud2tihak53qh61okvo2c8.apps.googleusercontent.com</string>
 
 
     <string name="sign_in_text">Sign In Using Google</string>
@@ -14,9 +14,79 @@
     <string name="home_button">Home Page</string>
     <string name="settings_page">Settings Page</string>
 
+    <!--Onboarding-->
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="welcome">Welcome to myHeart app.</string>
+    <string name="userwelcome">Hey, %1$s.\n We want to know you more.\nLet\'s start with a selfie.</string>
+    <string name="avatar">Meet your buddy , BuddyName. He is amateur now</string>
+    <string name="button1">Let\'s Make your buddy Stronger!</string>
+    <string name="smartness_meter">Personalisation Index</string>
+    <string name="labreport">It would be great if we could get your medical report to figure out your health vitals from that</string>
+    <string name="supportperson">Number of family/support members in the house</string>
+    <string name="sleeptext">How long do you sleep? (Average in hours)</string>
+    <string name="stress">Number of stress-filled days in a week?</string>
+    <string name="history">Any parent with CVD history?</string>
+    <string name="medication">Do you take any CVD medication?</string>
+    <string name="smoke">Do you smoke?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="agree">I Agree</string>
+
+    <string name="contactselect">Who would you like to be your support in your journey?</string>
+    <string name="contactselect_button">Select a contact</string>
+    <string name="setgoals">Let\'s set some goals to move ahead</string>
+    <string name="goal_helpertext">This determines the intensity of the program</string>
+
+
+    <string-array name="mildrisks">
+        <item name="BMI">BMI in the overweight category.</item>
+        <item name="BP" >Systolic Blood pressure in the range 120 to 140.</item>
+        <item name="sugar">Fasting Blood sugar in the range 100 to 140.</item>
+        <item name="sleep">Sleeping hours between 6 and 8 hours.</item>
+        <item name="cholesterol">LDL levels are mildly high in the range 130\-160.</item>
+    </string-array>
+
+    <string-array name="majorrisks">
+        <item name="BMI">BMI in the obese category.</item>
+        <item name="BP">Systolic Blood pressure above 140.</item>
+        <item name="sugar">Fasting Blood Sugar above 140.</item>
+        <item name="sleep">Sleeping hours less than 8 hours.</item>
+        <item name="cholesterol">LDL levels are high above 160.</item>
+        <item name="smoke">Smoking can increase the risk.</item>
+    </string-array>
+
+
+    <string name="consent">This is a health app.\n This is a research only app and not clinical. All the data collected will be used for research purposes only.\n\nYou can always manage your data in the settings page</string>
+
+    <string name="setvalue">Enter Value</string>
+
+    <string name="onboarding_complete_title">Finishing Up</string>
+    <string name="onboarding_complete_description">Thank You for your input, we will notify you when we are ready for you.</string>
+
+    <string name="introduction_primordial">Congrats! You have no major risks but the following minor risks:\n \n %1$s </string>
+    <string name="introduction_primary">You have the following major risks:\n \n %1$s </string>
+    <string name="goals_primordial">What are the areas in which you would like us to focus on ?</string>
+    <string name="goals_physical">Physical Fitness</string>
+    <string name="goals_dieting">Dieting</string>
+    <string name="goals_stress">Stress Management</string>
+    <string name="goals_smoking">Quit Smoking</string>
+    <string name="selected">Selected</string>
+
+    <string name="letsgo">Let\'s Go!</string>
+    <string name="getstarted">Get Started</string>
+
+    <string name="user_states">UserStates</string>
+    <string name="fragment_id">fragmentnumber</string>
+    <string name="onboarding_complete">onboardingcomp</string>
+    <string name="firstuse_complete">firstusecomp</string>
+    <string name="myheart_progress">heartpoints</string>
+
+
     <string name="tab_text_1">MyTask</string>
     <string name="tab_text_2">MyHeart</string>
-    <string name="tab_text_3">Challenges</string>
+    <string name="tab_text_3">Assistant</string>
     <string name="tab_text_4">Knowledge</string>
 
     <string name="random_number">Random Number</string>
@@ -33,6 +103,7 @@
     <string name="source1">Source 1</string>
     <string name="source2">Source 2</string>
 
+    <string name="points_myheart">Myheart\npoints\n%1$d/%2$d</string>
 
     <string name="title_activity_settings">Settings</string>
 
@@ -55,13 +126,28 @@
     <string name="sync_title">Sync email periodically</string>
     <string name="delete_title">Delete Data</string>
     <string name="donate_title">Donate Data</string>
+    <string name="data_title">Data Entries</string>
     <string name="delete_summary">Delete all your data.</string>
     <string name="donate_summary_on">Data will be donated on the 30th of each month</string>
     <string name="donate_summary_off">No data will be donated for Study</string>
 
     <!--Logout-->
     <string name="logout">Logout</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gender_selection">Gender Selection</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other</string>
+    <string name="bmi">BMI</string>
+    <string name="age">Age</string>
+    <string name="location">Location</string>
+    <string name="vital_1">BMI</string>
+    <string name="vital_2">Blood Pressure</string>
+    <string name="vital_3">Sleep hours</string>
+    <string name="vitals">Vitals</string>
+    <string name="goals">Goals</string>
+    <string name="goal_1">Goal 1</string>
+    <string name="goal_2">Goal 2</string>
+    <string name="goal_3">Goal 3</string>
 
 </resources>

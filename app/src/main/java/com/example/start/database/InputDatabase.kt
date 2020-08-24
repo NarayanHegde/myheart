@@ -2,35 +2,24 @@ package com.example.start.database
 
 import android.app.Application
 import android.content.Context
+import android.util.Log
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-@Database(entities = arrayOf(DataInput::class),version=1,exportSchema = false)
+@Database(entities = arrayOf(DataInput::class,Tasks::class,Notifications::class,Dashboard::class),version=1,exportSchema = false)
 @TypeConverters(Converters::class)
 public abstract  class InputDatabase() : RoomDatabase (){
 
     abstract fun inputDao() : InputDao
-
-    private class DataCallback(
-        private val scope: CoroutineScope
-    ) : RoomDatabase.Callback(){
-
-        override fun onOpen(db: SupportSQLiteDatabase) {
-            super.onOpen(db)
-
-            INSTANCE?.let{
-                scope.launch{
-                    it.inputDao().deleteAll()
-                }
-            }
-
-        }
-    }
+    abstract fun tasksDao() : TasksDao
+    abstract fun notificationsDao() : NotificationsDao
+    abstract fun dashboardDao(): DashboardDao
 
     companion object {
 
@@ -38,19 +27,19 @@ public abstract  class InputDatabase() : RoomDatabase (){
         private var INSTANCE : InputDatabase? =null
 
         public fun getDatabase( context: Context
-                                , scope: CoroutineScope
         ): InputDatabase{
             val tempinstance = INSTANCE
             if(tempinstance != null){
                 return tempinstance
             }
             synchronized(this){
+
                 val instance= Room.databaseBuilder(
-                context.applicationContext,
+                    context.applicationContext,
                     InputDatabase::class.java,
                     "photo_database")
-//                    .addCallback(DataCallback(scope))
                     .build()
+//                Log.d("databasecreated","true")
                 INSTANCE=instance
                 return instance
             }

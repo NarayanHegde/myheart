@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "task": "Upload a Selfie",
+      "type": "Vitals",
+      "entrytype": "Action",
+      "frequency": "Weekly"
+    },
+    {
+      "task": "Measure and Enter your Blood Pressure",
+      "type": "Vitals",
+      "entrytype": "Number",
+      "frequency": "Daily"
+    }
+  ]
+}

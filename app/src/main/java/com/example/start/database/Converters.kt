@@ -6,15 +6,50 @@ import java.util.*
 class Converters {
 
     enum class Indicator {
+        General,
         BMI,
-        Smoke
+        Smoke,
+        SocioEconomic
     }
 
     enum class Datapath {
+        BPLOW,
+        BPHIGH,
+        HDL,
+        LDL,
+        TotalCholesterol,
+        HbA1c,
         Image,
         Weight,
         Height,
-        Age
+        Age,
+        BMI,
+        Gender,
+        Sleep,
+        Stress,
+        Support,
+        Smoke,
+        History,
+        Medication
+    }
+
+    enum class TasksType{
+        Vitals,
+        Tasks,
+        Followup,
+        Goals
+    }
+
+    enum class EntryType{
+        Number,
+        Scale,
+        Boolean,
+        Action
+    }
+
+    enum class Frequency{
+        Weekly,
+        Daily
     }
 
     @TypeConverter
@@ -47,5 +82,33 @@ class Converters {
         return Datapath.values()[int]
     }
 
+    @TypeConverter
+    fun fromtasktype(tasksType: TasksType): Int?{
+        return tasksType.ordinal
+    }
 
+    @TypeConverter
+    fun totaskstype(int: Int):TasksType?{
+        return TasksType.values()[int]
+    }
+
+    @TypeConverter
+    fun fromentrytype(entryType: EntryType): Int?{
+        return entryType.ordinal
+    }
+
+    @TypeConverter
+    fun toentrytype(int: Int):EntryType?{
+        return EntryType.values()[int]
+    }
+
+    @TypeConverter
+    fun fromfrequency(frequency:Frequency):Int?{
+        return frequency.ordinal
+    }
+
+    @TypeConverter
+    fun tofrequency(int: Int): Frequency?{
+        return Frequency.values()[int]
+    }
 }
